@@ -1,5 +1,5 @@
-import { Order } from '../../src/types';
-import products from './products';
+import { Order } from '@/src/types';
+import {products} from './products';
 import dayjs from 'dayjs';
 
 const now = dayjs();
@@ -82,4 +82,4 @@ const orders: Order[] = [
   },
 ];
 
-export default orders;
+export { orders };
