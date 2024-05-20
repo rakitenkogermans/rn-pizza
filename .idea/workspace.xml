@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9de7710-9174-41c7-84ce-5e86096e2de4" name="Changes" comment="menu screen and details screen">
-      <change afterPath="$PROJECT_DIR$/src/app/cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartListItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/CartProvider.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="shopping cart screen">
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(user)/two.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(tabs)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(tabs)/menu/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/two.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/two.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductListItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2fe7ysRLtpcPXqU83PZ2PL5lqcs" />
+  <component name="ProjectId" id="2foU3nJQRUTtSdEjpOqHWUOkMSp" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -35,33 +41,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/germans/personal/rn-pizza/src/app/(tabs)/menu&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/germans/personal/rn-pizza/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/germans/personal/rn-pizza/src/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "/Users/germans/personal/rn-pizza/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/(tabs)/menu" />
+      <recent name="$PROJECT_DIR$/src/app" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/(tabs)/menu" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
-    <key name="es6.move.members.recent.items">
-      <recent name="$PROJECT_DIR$/src/app/(tabs)/ProductListItem.tsx" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -73,35 +88,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b9de7710-9174-41c7-84ce-5e86096e2de4" name="Changes" comment="" />
-      <created>1714149946396</created>
+      <changelist id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="shopping cart screen" />
+      <created>1714466727420</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714149946396</updated>
-      <workItem from="1714149947450" duration="95000" />
-      <workItem from="1714150103488" duration="1290000" />
-      <workItem from="1714151410646" duration="147000" />
-      <workItem from="1714151560470" duration="1238000" />
-      <workItem from="1714302796820" duration="11664000" />
-      <workItem from="1714392722964" duration="8982000" />
+      <updated>1714466727420</updated>
+      <workItem from="1714466728467" duration="5490000" />
+      <workItem from="1714827595466" duration="1660000" />
+      <workItem from="1715417409569" duration="3692000" />
+      <workItem from="1716217002080" duration="3040000" />
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <option name="closed" value="true" />
-      <created>1714151687693</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714151687693</updated>
-    </task>
-    <task id="LOCAL-00002" summary="menu screen and details screen">
-      <option name="closed" value="true" />
-      <created>1714403643370</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1714403643370</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,8 +115,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <MESSAGE value="menu screen and details screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu screen and details screen" />
+    <MESSAGE value="shopping cart screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="shopping cart screen" />
   </component>
 </project>
