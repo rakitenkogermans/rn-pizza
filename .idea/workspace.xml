@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="shopping cart screen">
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/two.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="Admin side">
+      <change afterPath="$PROJECT_DIR$/src/app/(admin)/menu/create.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(tabs)/two.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/two.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/two.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +89,17 @@
       <workItem from="1714466728467" duration="5490000" />
       <workItem from="1714827595466" duration="1660000" />
       <workItem from="1715417409569" duration="3692000" />
-      <workItem from="1716217002080" duration="3040000" />
+      <workItem from="1716217002080" duration="7171000" />
     </task>
+    <task id="LOCAL-00001" summary="Admin side">
+      <option name="closed" value="true" />
+      <created>1716220779797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716220779797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="shopping cart screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopping cart screen" />
+    <MESSAGE value="Admin side" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin side" />
   </component>
 </project>

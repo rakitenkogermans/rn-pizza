@@ -6,16 +6,14 @@ import {FlatList, StyleSheet} from "react-native";
 
 export default function MenuScreen() {
   return (
-      <View>
-        <FlatList
-            data={products}
-            renderItem={({item}) => <ProductListItem product={item} /> }
-            keyExtractor={(item)=>item.name}
-            numColumns={2}
-            contentContainerStyle={styles.container}
-            columnWrapperStyle={styles.columnWrapper}
-        />
-      </View>
+      <FlatList
+          data={products}
+          renderItem={({item}) => <ProductListItem product={item} /> }
+          keyExtractor={(item)=>item.name}
+          numColumns={2}
+          contentContainerStyle={styles.container}
+          columnWrapperStyle={styles.columnWrapper}
+      />
   );
 }
 
