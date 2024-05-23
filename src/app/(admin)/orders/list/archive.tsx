@@ -3,10 +3,10 @@ import { Stack } from 'expo-router';
 import {OrderListItem} from "@/src/components/OrderListItem";
 import {orders} from "@/assets/data/orders";
 
-export default function OrdersScreen() {
+export default function ArchiveOrdersScreen() {
     return (
         <>
-            <Stack.Screen options={{ title: 'Orders' }} />
+            <Stack.Screen options={{ title: 'Archive' }} />
             <FlatList
                 data={orders}
                 contentContainerStyle={{ gap: 10, padding: 10 }}

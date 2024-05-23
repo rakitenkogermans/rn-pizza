@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="(ui) create and update product">
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/sign-in.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/orders/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/orders/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/orders/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OrderItemListItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OrderListItem.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="(ui) auth and orders">
+      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/two.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/archive.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +37,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/germans/personal/rn-pizza/src/app/(admin)",
+    "last_opened_file_path": "/Users/germans/personal/rn-pizza/src/app/(admin)/orders/list",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,8 +50,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(admin)/orders/list" />
       <recent name="$PROJECT_DIR$/src/app/(admin)" />
       <recent name="$PROJECT_DIR$/src/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(admin)/orders/list" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,7 +94,7 @@
       <workItem from="1714827595466" duration="1660000" />
       <workItem from="1715417409569" duration="3692000" />
       <workItem from="1716217002080" duration="7339000" />
-      <workItem from="1716457444956" duration="4074000" />
+      <workItem from="1716457444956" duration="7361000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -118,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716224788506</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="(ui) auth and orders">
+      <option name="closed" value="true" />
+      <created>1716461967318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716461967318</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +141,7 @@
     <MESSAGE value="shopping cart screen" />
     <MESSAGE value="Admin side" />
     <MESSAGE value="(ui) create and update product" />
-    <option name="LAST_COMMIT_MESSAGE" value="(ui) create and update product" />
+    <MESSAGE value="(ui) auth and orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="(ui) auth and orders" />
   </component>
 </project>
