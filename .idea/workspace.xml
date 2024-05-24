@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="(ui) top tabs">
-      <change afterPath="$PROJECT_DIR$/src/lib/supabase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/AuthProvider.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="authentication with supabase">
+      <change afterPath="$PROJECT_DIR$/src/api/products/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/QueryProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-in.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,7 @@
       <workItem from="1715417409569" duration="3692000" />
       <workItem from="1716217002080" duration="7339000" />
       <workItem from="1716457444956" duration="7680000" />
-      <workItem from="1716546301154" duration="4673000" />
+      <workItem from="1716546301154" duration="8422000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -134,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716465454826</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="authentication with supabase">
+      <option name="closed" value="true" />
+      <created>1716551050655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716551050655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +162,7 @@
     <MESSAGE value="(ui) create and update product" />
     <MESSAGE value="(ui) auth and orders" />
     <MESSAGE value="(ui) top tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="(ui) top tabs" />
+    <MESSAGE value="authentication with supabase" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication with supabase" />
   </component>
 </project>

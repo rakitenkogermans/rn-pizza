@@ -1,11 +1,11 @@
-import {Image, Text, View, StyleSheet, Pressable} from "react-native";
+import {Image, Text, View, StyleSheet, Pressable, ActivityIndicator} from "react-native";
 import {Stack, useLocalSearchParams, useRouter} from "expo-router";
 import React, {useCallback, useState} from "react";
-import {products} from "@/assets/data/products";
 import {defaultPizzaImg} from "@/src/components/ProductListItem";
 import { Button } from "@/src/components/Button";
 import {useCart} from "@/src/providers/CartProvider";
 import {PizzaSize} from "@/src/types";
+import {useProduct} from "@/src/api/products";
 
 interface ProductDetailsScreenProps {
     className?: string
@@ -15,17 +15,26 @@ const sizes: PizzaSize[] = ['S', 'M', 'L', 'XL'];
 
 const ProductDetailsScreen = ({ className }: ProductDetailsScreenProps) => {
     const { id } = useLocalSearchParams();
+
+    const {
+        data: product,
+        isLoading,
+        error,
+    } = useProduct(parseInt(typeof id === 'string' ? id : id[0]));
+
     const [selectedSize, setSelectedSize] = useState<PizzaSize>('M');
     const {addItem} = useCart();
     const router = useRouter();
 
-    const product = products.find((p) => p.id.toString() === id);
+    const onSelectedSizeChange = useCallback((newSize: PizzaSize) => () => setSelectedSize(newSize), []);
 
-    if (!product) {
-        return <Text>Product not found</Text>
+    if (isLoading) {
+        return <ActivityIndicator />;
     }
 
-    const onSelectedSizeChange = useCallback((newSize: PizzaSize) => () => setSelectedSize(newSize), []);
+    if (error || !product) {
+        return <Text>Failed to fetch product</Text>;
+    }
 
     const addToCart = () => {
         addItem(product, selectedSize);
