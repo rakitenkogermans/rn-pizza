@@ -1,11 +1,12 @@
 import {View, Text, StyleSheet, Image, TextInput, Alert} from 'react-native';
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Colors } from '@/src/constants/Colors';
 import {Stack, useLocalSearchParams, useRouter} from "expo-router";
 import * as ImagePicker from 'expo-image-picker';
 import {defaultPizzaImg} from "@/src/components/ProductListItem";
 import { Button } from '@/src/components/Button';
 import {is} from "@babel/types";
+import {useDeleteProduct, useInsertProduct, useProduct, useUpdateProduct} from "@/src/api/products";
 
 const CreateScreen = () => {
     const [image, setImage] = useState<string | null>(null);
@@ -13,9 +14,26 @@ const CreateScreen = () => {
     const [price, setPrice] = useState('');
     const [errors, setErrors] = useState('');
 
+
+
+    const { id: idString } = useLocalSearchParams();
+    const id = parseFloat(typeof idString === 'string' ? idString : idString[0]);
+
+    const { mutate: insertProduct } = useInsertProduct();
+    const { data: updatedProduct, isLoading } = useProduct(id);
+    const { mutate: updateProduct } = useUpdateProduct();
+    const { mutate: deleteProduct } = useDeleteProduct()
+
     const router = useRouter();
-    const { id } = useLocalSearchParams()
     const isUpdating = !!id
+
+    useEffect(() => {
+        if (updatedProduct) {
+            setName(updatedProduct.name);
+            setPrice(updatedProduct.price.toString());
+            setImage(updatedProduct.image);
+        }
+    }, [updatedProduct]);
 
     const validateInput = () => {
         setErrors('');
@@ -34,28 +52,40 @@ const CreateScreen = () => {
         return true;
     };
 
-    const onCreate = () => {
-        if (!validateInput()) {
-            return;
-        }
-
-        console.warn('Creating dish');
+    const resetFields = () => {
         setName('');
         setPrice('');
         setImage('');
-        router.back();
+    }
+
+    const onCreate = async () => {
+        if (!validateInput()) {
+            return;
+        }
+        insertProduct(
+            { name, price: parseFloat(price), image },
+            {
+                onSuccess: () => {
+                    resetFields();
+                    router.back();
+                },
+            }
+        );
     };
 
-    const onUpdate = () => {
+    const onUpdate = async () => {
         if (!validateInput()) {
             return;
         }
-
-        console.warn('Updating dish');
-        setName('');
-        setPrice('');
-        setImage('');
-        router.back();
+        updateProduct(
+            { id, name, price: parseFloat(price), image },
+            {
+                onSuccess: () => {
+                    resetFields();
+                    router.back();
+                },
+            }
+        );
     };
 
     const onSubmit = () => {
@@ -83,7 +113,12 @@ const CreateScreen = () => {
     };
 
     const onDelete = () => {
-        console.log('DELETE')
+        deleteProduct(id, {
+            onSuccess: () => {
+                resetFields();
+                router.replace('/(admin)');
+            }
+        })
     }
 
     const confirmDelete = () => {
@@ -129,7 +164,7 @@ const CreateScreen = () => {
             />
 
             <Text style={styles.error}>{errors}</Text>
-            <Button onPress={onCreate} text={isUpdating ? "Update" : "Create"} />
+            <Button onPress={onSubmit} text={isUpdating ? "Update" : "Create"} />
             {isUpdating && <Text onPress={confirmDelete} style={styles.textButton}>Delete</Text>}
         </View>
     );

@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="authentication with supabase">
-      <change afterPath="$PROJECT_DIR$/src/api/products/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/QueryProvider.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="fetching product and product by id with react query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/products/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/products/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/create.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <workItem from="1715417409569" duration="3692000" />
       <workItem from="1716217002080" duration="7339000" />
       <workItem from="1716457444956" duration="7680000" />
-      <workItem from="1716546301154" duration="8422000" />
+      <workItem from="1716546301154" duration="11147000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -139,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716551050655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fetching product and product by id with react query">
+      <option name="closed" value="true" />
+      <created>1716562588740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716562588741</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +164,7 @@
     <MESSAGE value="(ui) auth and orders" />
     <MESSAGE value="(ui) top tabs" />
     <MESSAGE value="authentication with supabase" />
-    <option name="LAST_COMMIT_MESSAGE" value="authentication with supabase" />
+    <MESSAGE value="fetching product and product by id with react query" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetching product and product by id with react query" />
   </component>
 </project>
