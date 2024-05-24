@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="(ui) auth and orders">
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="(ui) top tabs">
+      <change afterPath="$PROJECT_DIR$/src/lib/supabase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/AuthProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/archive.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/germans/personal/rn-pizza/src/app/(admin)/orders/list",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "/Users/germans/personal/rn-pizza/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/germans/personal/rn-pizza/src/app/(admin)/orders/list&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/germans/personal/rn-pizza/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/(admin)/orders/list" />
@@ -94,7 +99,8 @@
       <workItem from="1714827595466" duration="1660000" />
       <workItem from="1715417409569" duration="3692000" />
       <workItem from="1716217002080" duration="7339000" />
-      <workItem from="1716457444956" duration="7361000" />
+      <workItem from="1716457444956" duration="7680000" />
+      <workItem from="1716546301154" duration="4673000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -120,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716461967318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="(ui) top tabs">
+      <option name="closed" value="true" />
+      <created>1716465454826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716465454826</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +156,7 @@
     <MESSAGE value="Admin side" />
     <MESSAGE value="(ui) create and update product" />
     <MESSAGE value="(ui) auth and orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="(ui) auth and orders" />
+    <MESSAGE value="(ui) top tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="(ui) top tabs" />
   </component>
 </project>
