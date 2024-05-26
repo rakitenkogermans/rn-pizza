@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="product CRUD operations">
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="get supabase tables types for typescript">
+      <change afterPath="$PROJECT_DIR$/src/api/order-items/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/orders/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/products/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/products/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductListItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/supabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/supabase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/list/archive.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/archive.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/orders/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/orders/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(user)/orders/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/orders/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderItemListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderItemListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/providers/CartProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/CartProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
@@ -31,23 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/germans/personal/rn-pizza/src/app/(admin)/orders/list&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/germans/personal/rn-pizza/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/germans/personal/rn-pizza/src/api/orders",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "/Users/germans/personal/rn-pizza/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api/orders" />
       <recent name="$PROJECT_DIR$/src/app/(admin)/orders/list" />
       <recent name="$PROJECT_DIR$/src/app/(admin)" />
       <recent name="$PROJECT_DIR$/src/app" />
@@ -95,7 +104,7 @@
       <workItem from="1716457444956" duration="7680000" />
       <workItem from="1716546301154" duration="11282000" />
       <workItem from="1716710682163" duration="33000" />
-      <workItem from="1716716521884" duration="1209000" />
+      <workItem from="1716716521884" duration="10306000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -153,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716567403446</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="get supabase tables types for typescript">
+      <option name="closed" value="true" />
+      <created>1716717771135</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716717771135</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +196,7 @@
     <MESSAGE value="authentication with supabase" />
     <MESSAGE value="fetching product and product by id with react query" />
     <MESSAGE value="product CRUD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="product CRUD operations" />
+    <MESSAGE value="get supabase tables types for typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="get supabase tables types for typescript" />
   </component>
 </project>
