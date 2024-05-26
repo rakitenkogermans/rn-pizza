@@ -1,9 +1,9 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '../../lib/supabase';
-import { Product } from '../../types';
+import {Tables} from "@/src/types";
 
 export const useProductList = () => {
-    return useQuery<Product[]>({
+    return useQuery({
         queryKey: ['products'],
         queryFn: async () => {
             const { data, error } = await supabase.from('products').select('*');
@@ -16,7 +16,7 @@ export const useProductList = () => {
 };
 
 export const useProduct = (id: number) => {
-    return useQuery<Product>({
+    return useQuery({
         queryKey: ['product', id],
         queryFn: async () => {
             const { data, error } = await supabase
@@ -37,7 +37,7 @@ export const useInsertProduct = () => {
     const queryClient = useQueryClient();
 
     return useMutation({
-        async mutationFn(data: Omit<Product, 'id'>) {
+        async mutationFn(data: Omit<Tables<'products'>, 'id'>) {
             const { error, data: newProduct } = await supabase.from('products').insert({
                 name: data.name,
                 price: data.price,
@@ -63,7 +63,7 @@ export const useUpdateProduct = () => {
     const queryClient = useQueryClient();
 
     return useMutation({
-        async mutationFn({ id, ...update }: Product) {
+        async mutationFn({ id, ...update }: Tables<'products'>) {
             const { data, error } = await supabase
                 .from('products')
                 .update(update)
@@ -90,7 +90,7 @@ export const useDeleteProduct = () => {
     const queryClient = useQueryClient();
 
     return useMutation({
-        async mutationFn(id: Product['id']) {
+        async mutationFn(id: Tables<'products'>['id']) {
             const { data, error } = await supabase
                 .from('products')
                 .delete()
