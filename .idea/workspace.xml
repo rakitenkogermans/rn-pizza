@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="orders CRUD operations">
-      <change afterPath="$PROJECT_DIR$/src/app/(user)/profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RemoteImage.tsx" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="supabase storage, bug fixes, logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/menu/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/menu/create.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/orders/list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/menu/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(user)/orders/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(user)/orders/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartListItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OrderItemListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderItemListItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductListItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +93,7 @@
       <workItem from="1716710682163" duration="33000" />
       <workItem from="1716716521884" duration="10995000" />
       <workItem from="1716887171129" duration="22000" />
-      <workItem from="1717235872232" duration="5146000" />
+      <workItem from="1717235872232" duration="5910000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -180,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716728614163</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="supabase storage, bug fixes, logout">
+      <option name="closed" value="true" />
+      <created>1717243628239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717243628239</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +203,7 @@
     <MESSAGE value="product CRUD operations" />
     <MESSAGE value="get supabase tables types for typescript" />
     <MESSAGE value="orders CRUD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="orders CRUD operations" />
+    <MESSAGE value="supabase storage, bug fixes, logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="supabase storage, bug fixes, logout" />
   </component>
 </project>
