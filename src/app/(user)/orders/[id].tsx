@@ -3,10 +3,37 @@ import { Stack, useLocalSearchParams } from 'expo-router';
 import {OrderItemListItem} from '@/src/components/OrderItemListItem';
 import {OrderListItem} from '@/src/components/OrderListItem';
 import {useOrderDetails} from "@/src/api/orders";
+import {useEffect} from "react";
+import {supabase} from "@/src/lib/supabase";
+import {useQueryClient} from "@tanstack/react-query";
 
 const OrderDetailScreen = () => {
     const { id } = useLocalSearchParams();
     const { data: order, isLoading, error } = useOrderDetails(parseInt(typeof id === 'string' ? id : id[0]));
+
+    const queryClient = useQueryClient();
+
+    useEffect(() => {
+        const orders = supabase
+            .channel('custom-filter-channel')
+            .on(
+                'postgres_changes',
+                {
+                    event: 'UPDATE',
+                    schema: 'public',
+                    table: 'orders',
+                    filter: `id=eq.${id}`,
+                },
+                (payload) => {
+                    queryClient.invalidateQueries({queryKey: ['order', id]})
+                }
+            )
+            .subscribe();
+
+        return () => {
+            orders.unsubscribe();
+        };
+    }, []);
 
     if (isLoading) {
         return <ActivityIndicator />;

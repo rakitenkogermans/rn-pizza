@@ -5,8 +5,12 @@ import {Stack, useLocalSearchParams, useRouter} from "expo-router";
 import * as ImagePicker from 'expo-image-picker';
 import {defaultPizzaImg} from "@/src/components/ProductListItem";
 import { Button } from '@/src/components/Button';
-import {is} from "@babel/types";
+import * as FileSystem from 'expo-file-system'
+
 import {useDeleteProduct, useInsertProduct, useProduct, useUpdateProduct} from "@/src/api/products";
+import {randomUUID} from "expo-crypto";
+import {supabase} from "@/src/lib/supabase";
+import {decode} from "base64-arraybuffer";
 
 const CreateScreen = () => {
     const [image, setImage] = useState<string | null>(null);
@@ -14,10 +18,9 @@ const CreateScreen = () => {
     const [price, setPrice] = useState('');
     const [errors, setErrors] = useState('');
 
-
-
     const { id: idString } = useLocalSearchParams();
-    const id = parseFloat(typeof idString === 'string' ? idString : idString[0]);
+    const id = parseFloat(typeof idString === 'string' ? idString : idString?.[0]);
+    const isUpdating = !!id
 
     const { mutate: insertProduct } = useInsertProduct();
     const { data: updatedProduct, isLoading } = useProduct(id);
@@ -25,7 +28,6 @@ const CreateScreen = () => {
     const { mutate: deleteProduct } = useDeleteProduct()
 
     const router = useRouter();
-    const isUpdating = !!id
 
     useEffect(() => {
         if (updatedProduct) {
@@ -62,8 +64,11 @@ const CreateScreen = () => {
         if (!validateInput()) {
             return;
         }
+
+        const imagePath = await uploadImage();
+
         insertProduct(
-            { name, price: parseFloat(price), image },
+            { name, price: parseFloat(price), image: imagePath },
             {
                 onSuccess: () => {
                     resetFields();
@@ -77,8 +82,11 @@ const CreateScreen = () => {
         if (!validateInput()) {
             return;
         }
+
+        const imagePath = await uploadImage();
+
         updateProduct(
-            { id, name, price: parseFloat(price), image },
+            { id, name, price: parseFloat(price), image: imagePath },
             {
                 onSuccess: () => {
                     resetFields();
@@ -109,6 +117,25 @@ const CreateScreen = () => {
 
         if (!result.canceled) {
             setImage(result.assets[0].uri);
+        }
+    };
+
+    const uploadImage = async () => {
+        if (!image?.startsWith('file://')) {
+            return;
+        }
+
+        const base64 = await FileSystem.readAsStringAsync(image, {
+            encoding: 'base64',
+        });
+        const filePath = `${randomUUID()}.png`;
+        const contentType = 'image/png';
+        const { data, error } = await supabase.storage
+            .from('product-images')
+            .upload(filePath, decode(base64), { contentType });
+
+        if (data) {
+            return data.path;
         }
     };
 

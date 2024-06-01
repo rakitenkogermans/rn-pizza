@@ -5,6 +5,7 @@ import {defaultPizzaImg} from "@/src/components/ProductListItem";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import {Colors} from "@/src/constants/Colors";
 import {useProduct} from "@/src/api/products";
+import {RemoteImage} from "@/src/components/RemoteImage";
 
 interface ProductDetailsScreenProps {
     className?: string
@@ -50,7 +51,11 @@ const ProductDetailsScreen = ({ className }: ProductDetailsScreenProps) => {
             />
 
             <Stack.Screen options={{title: product.name}} />
-            <Image source={{uri: product.image ?? defaultPizzaImg}} style={styles.image} />
+            <RemoteImage
+                fallback={defaultPizzaImg}
+                path={product.image}
+                style={styles.image}
+            />
 
             <Text style={styles.title}>${product.name}</Text>
             <Text style={styles.price}>${product.price}</Text>
