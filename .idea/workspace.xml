@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="supabase storage, bug fixes, logout">
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="supabase init">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/supabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/supabase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/migrations/20240601121401_remote_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/migrations/20240601121401_remote_schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +97,7 @@
       <workItem from="1716710682163" duration="33000" />
       <workItem from="1716716521884" duration="10995000" />
       <workItem from="1716887171129" duration="22000" />
-      <workItem from="1717235872232" duration="5910000" />
+      <workItem from="1717235872232" duration="8826000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -175,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717243628239</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="supabase init">
+      <option name="closed" value="true" />
+      <created>1717244474996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717244474996</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +216,7 @@
     <MESSAGE value="get supabase tables types for typescript" />
     <MESSAGE value="orders CRUD operations" />
     <MESSAGE value="supabase storage, bug fixes, logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="supabase storage, bug fixes, logout" />
+    <MESSAGE value="supabase init" />
+    <option name="LAST_COMMIT_MESSAGE" value="supabase init" />
   </component>
 </project>

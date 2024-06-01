@@ -32,6 +32,8 @@ const SignUpScreen = () => {
                 onChangeText={setEmail}
                 placeholder="jon@gmail.com"
                 style={styles.input}
+                autoCapitalize="none"
+                keyboardType="email-address"
             />
 
             <Text style={styles.label}>Password</Text>
