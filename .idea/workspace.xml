@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="supabase init">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="7cf473e9-ca81-4f8b-9a52-4e557a2d212d" name="Changes" comment="supabase edge functions, stripe payment intent">
+      <change afterPath="$PROJECT_DIR$/supabase/functions/_utils/stripe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supabase/functions/payment-sheet/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/supabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/supabase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supabase/migrations/20240601121401_remote_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/migrations/20240601121401_remote_schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +30,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/germans/personal/rn-pizza/src/api/orders&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/germans/personal/rn-pizza/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/germans/personal/rn-pizza",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "/Users/germans/personal/rn-pizza/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/api/orders" />
       <recent name="$PROJECT_DIR$/src/app/(admin)/orders/list" />
       <recent name="$PROJECT_DIR$/src/app/(admin)" />
@@ -97,7 +98,9 @@
       <workItem from="1716710682163" duration="33000" />
       <workItem from="1716716521884" duration="10995000" />
       <workItem from="1716887171129" duration="22000" />
-      <workItem from="1717235872232" duration="8826000" />
+      <workItem from="1717235872232" duration="9477000" />
+      <workItem from="1717255062595" duration="48000" />
+      <workItem from="1717327035437" duration="2102000" />
     </task>
     <task id="LOCAL-00001" summary="Admin side">
       <option name="closed" value="true" />
@@ -187,7 +190,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717244474996</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="supabase db pull">
+      <option name="closed" value="true" />
+      <created>1717254162937</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717254162937</updated>
+    </task>
+    <task id="LOCAL-00013" summary="supabase edge functions, stripe payment intent">
+      <option name="closed" value="true" />
+      <created>1717328955189</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717328955189</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +236,8 @@
     <MESSAGE value="orders CRUD operations" />
     <MESSAGE value="supabase storage, bug fixes, logout" />
     <MESSAGE value="supabase init" />
-    <option name="LAST_COMMIT_MESSAGE" value="supabase init" />
+    <MESSAGE value="supabase db pull" />
+    <MESSAGE value="supabase edge functions, stripe payment intent" />
+    <option name="LAST_COMMIT_MESSAGE" value="supabase edge functions, stripe payment intent" />
   </component>
 </project>
